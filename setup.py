@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 # Setting up
 setup(
         name='altair_reveal', 
-        version='0.0.2',
+        version='0.0.3',
         author='Soo Oh',
         author_email='soh@revealnews.org',
         description='Reveal theme for Altair library',

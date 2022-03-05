@@ -12,6 +12,7 @@ palette = dict(
     orange='#e54600',
     dark_blue='#004488',
     blue='#0077bb',
+    magenta='#c51b8a'
 )
 
 def theme():
@@ -21,12 +22,12 @@ def theme():
     return dict(
         config=dict(
             view=dict(
-                width=600,
-                height=400,
+                width=320,
+                height=500,
                 strokeOpacity=0
             ),
             background=palette['background'],
-            padding={'left': 20, 'top': 15, 'right': 20, 'bottom': 80},
+            padding={'left': 20, 'top': 20, 'right': 20, 'bottom': 80},
             arc=dict(fill=palette['blue']),
             area=dict(fill=palette['blue']),
             line=dict(stroke=palette['blue'], strokeWidth=3),
@@ -48,19 +49,20 @@ def theme():
                 subtitleFontSize=20,
                 subtitleFontWeight=300,
                 subtitlePadding=10,
-                subtitleLineHeight=26
+                subtitleLineHeight=24
             ),
             axis=dict(
+                gridColor=palette['light_grey'],
                 title=None,
                 titleColor=palette['dark_grey'],
-                labelFont='Tenon',
-                labelFontSize=13,
                 titleFontWeight=300,
                 labelColor=palette['dark_grey'],
+                labelFont='Tenon',
+                labelFontSize=13,
+                labelFontWeight=400,
                 labelFlush=False,
                 labelPadding=5,
-                tickSize=10,
-                gridColor=palette['light_grey'],
+                tickSize=6,
             ),
             axisX=dict(
                 domainColor=palette['dark_grey'],
@@ -77,11 +79,11 @@ def theme():
                 offset=40,
                 columnPadding=20,
                 titleFont='Tenon',
-                titleFontSize=14,
+                titleFontSize=16,
                 titleFontWeight=400,
                 labelAlign='left',
                 labelFont='Tenon',
-                labelFontSize=13,
+                labelFontSize=16,
                 labelFontWeight=300,
                 labelColor=palette['black'],
                 labelBaseline='middle',
